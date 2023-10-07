@@ -7,8 +7,9 @@ import Portofolio from "./portofolio";
 import Contact from "./contact";
 
 const Home = () => {
- return(
+  return (
     <>
+      <div className="scrollbar scrollbar-thumb-primary">
         <Navbar />
         <Hero />
         <About />
@@ -16,7 +17,8 @@ const Home = () => {
         <Portofolio />
         <Contact />
         <Footer />
+      </div>
     </>
- )
-}
+  );
+};
 export default Home;

@@ -22,7 +22,7 @@ const About = () => {
               vacancy websites obtained from an intensive ReactJs bootcamp at
               Sanbercode. I use this website as my resume and portofolio.
             </p>
-            <div className="mt-4 sm:flex md:mt-8 m-auto justify-center">
+            <div className="mt-4 md:mt-8 m-auto justify-center flex">
               <div className="rounded-md shadow">
                 <button>
                   <a
