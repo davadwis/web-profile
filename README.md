@@ -15,7 +15,7 @@ Fresh graduate from Gunadarma University with a degree in Informatics, aspiring 
 
 ## Feedback
 
-If you have any feedback, please reach out to us at davadwi123@gmail.com
+If you have any feedback, please reach out to me at davadwi123@gmail.com
 
 
 ## 🔗 Links
