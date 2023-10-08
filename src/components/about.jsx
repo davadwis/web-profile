@@ -1,11 +1,20 @@
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import profilePicture from "../assets/Picsart_23-09-06_09-53-54-196.png";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
       <div
         id="about"
-        className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 pt-20 mt-24 mb-40"
+        className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 pt-32 mt-24 mb-40"
+        data-aos="zoom-in-up"
+        data-aos-duration="2000"
       >
         <div className="flex items-center pt-10 md:w-1/2 md:pt-5 md:pl-10">
           <div className="text-justify">

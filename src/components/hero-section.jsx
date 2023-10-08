@@ -1,18 +1,33 @@
 import vektor from "../assets/vektor_web_profile_heroSerction.png";
 import { TypeAnimation } from "react-type-animation";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Hero = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
-      <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-8 md:pt-20">
+      <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-8 md:pt-20 pt-16">
         <div className="flex items-center pt-10 md:w-1/2 md:pt-5 md:pl-10">
           <div className="relative w-full p-3 rounded  md:p-8">
-            <div className="rounded-lg bg-white text-black w-full">
+            <div
+              className="rounded-lg bg-white text-black w-full"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <img src={vektor} />
             </div>
           </div>
         </div>
-        <div className="flex items-center md:w-1/2 md:pt-5 md:pr-10">
+        <div
+          className="flex items-center md:w-1/2 md:pt-5 md:pr-10"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+        >
           <div className="text-left">
             <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
               Hi, Im <span></span>

@@ -1,7 +1,14 @@
 import job_hunt from "../assets/job-hunt.png";
 import web_profile_dava from "../assets/web-profile-dava.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Portofolio = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
       <div id="portofolio" className="text-center mt-10 pt-36">
@@ -10,7 +17,11 @@ const Portofolio = () => {
         </h2>
       </div>
       <div className="grid-cols-1 sm:grid md:grid-cols-2 w-11/12 mb-64 md:w-5/6 m-auto content-center gap-4 mt-4">
-        <div className="mt-4 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0 md:h-[620px]">
+        <div
+          className="mt-4 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0 md:h-[620px]"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <a href="https://job-hunt-dava.netlify.app/">
             <img
               className="rounded-t-lg"
@@ -34,7 +45,11 @@ const Portofolio = () => {
             </p>
           </div>
         </div>
-        <div className="mt-4 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0 md:h-[620px]">
+        <div
+          className="mt-4 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0 md:h-[620px]"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <a href="http://davadwi.netlify.app/">
             <img
               className="rounded-t-lg"

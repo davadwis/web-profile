@@ -1,9 +1,20 @@
 import { Dropdown } from "flowbite-react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Navbar = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
-      <nav className="border fixed z-20 w-full top-0 shadow-xl shadow-sky-500/50 border-transparent backdrop-blur-sm">
+      <nav
+        className="border fixed z-20 w-full top-0 shadow-xl shadow-sky-500/50 border-transparent backdrop-blur-sm"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4 h-[96px]">
           <div className="flex">
             <div className="text-sm text-gray-900 rounded-lg md:hidden pr-36">
