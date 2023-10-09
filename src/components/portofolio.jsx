@@ -1,5 +1,5 @@
-import job_hunt from "../assets/job-hunt.png";
-import web_profile_dava from "../assets/web-profile-dava.png";
+import job_hunt from "../assets/job-hunt.webp";
+import web_profile_dava from "../assets/web-profile-dava.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -24,9 +24,9 @@ const Portofolio = () => {
         >
           <a href="https://job-hunt-dava.netlify.app/">
             <img
-              className="rounded-t-lg"
+              className="rounded-t-lg w-[640px] h-[320px]"
               src={job_hunt}
-              alt="Hollywood Sign on The Hill"
+              alt="Job Hunt by Dava Dwi"
             />
           </a>
           <div className="p-6">
@@ -52,9 +52,9 @@ const Portofolio = () => {
         >
           <a href="http://davadwi.netlify.app/">
             <img
-              className="rounded-t-lg"
+              className="rounded-t-lg w-[640px] h-[320px]"
               src={web_profile_dava}
-              alt="Hollywood Sign on The Hill"
+              alt="Web Profile Dava Dwi"
             />
           </a>
           <div className="p-6">

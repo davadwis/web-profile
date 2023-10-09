@@ -1,8 +1,8 @@
-import ig from "../assets/instagram.png";
-import linkedin from "../assets/linkedin.png";
-import github from "../assets/github.png";
-import email from "../assets/email.png";
-import wa from "../assets/whatsapp.png";
+import ig from "../assets/instagram.webp";
+import linkedin from "../assets/linkedin.webp";
+import github from "../assets/github.webp";
+import email from "../assets/email.webp";
+import wa from "../assets/whatsapp.webp";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -27,9 +27,7 @@ const Contact = () => {
             data-aos-duration="2000"
           >
             <div className="flex flex-row p-6">
-              <div className="h-12 w-12">
-                <img src={ig} className="rounded-md" />
-              </div>
+              <img src={ig} className="rounded-md h-12 w-12" alt="Instagram" />
               <div className="flex flex-col ml-4">
                 <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                   Instagram
@@ -48,9 +46,11 @@ const Contact = () => {
             data-aos-duration="2000"
           >
             <div className="flex flex-row p-6">
-              <div className="h-12 w-12">
-                <img src={linkedin} className="rounded-md" />
-              </div>
+              <img
+                src={linkedin}
+                className="rounded-md h-12 w-12"
+                alt="LinkedIn"
+              />
               <div className="flex flex-col ml-4">
                 <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                   LinkedIn
@@ -69,9 +69,7 @@ const Contact = () => {
             data-aos-duration="2000"
           >
             <div className="flex flex-row p-6">
-              <div className="h-12 w-12">
-                <img src={github} className="rounded-md" />
-              </div>
+              <img src={github} className="rounded-md h-12 w-12" alt="Github" />
               <div className="flex flex-col ml-4">
                 <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                   Github
@@ -83,16 +81,14 @@ const Contact = () => {
             </div>
           </div>
         </a>
-        <a>
+        <a href="https://mail.google.com/">
           <div
             className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
             data-aos="flip-up"
             data-aos-duration="2000"
           >
             <div className="flex flex-row p-6">
-              <div className="h-12 w-12">
-                <img src={email} className="rounded-md" />
-              </div>
+              <img src={email} className="rounded-md h-12 w-12" alt="E-Mail" />
               <div className="flex flex-col ml-4">
                 <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                   E-Mail
@@ -111,9 +107,7 @@ const Contact = () => {
             data-aos-duration="2000"
           >
             <div className="flex flex-row p-6">
-              <div className="h-12 w-12">
-                <img src={wa} className="rounded-md" />
-              </div>
+              <img src={wa} className="rounded-md h-12 w-12" alt="Whatsapp" />
               <div className="flex flex-col ml-4">
                 <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                   Whatsapp

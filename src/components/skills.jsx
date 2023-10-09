@@ -1,14 +1,14 @@
-import html from "../assets/html-5.png";
-import css from "../assets/css-3.png";
-import js from "../assets/js.png";
-import react from "../assets/react.png";
-import tailwind from "../assets/tailwindcss.png";
-import axios from "../assets/axios.png";
-import mysql from "../assets/mysql.png";
-import git from "../assets/git.png";
-import php from "../assets/php.png";
-import python from "../assets/python.png";
-import java from "../assets/java.png";
+import html from "../assets/html-5.webp";
+import css from "../assets/css-3.webp";
+import js from "../assets/js.webp";
+import react from "../assets/react.webp";
+import tailwind from "../assets/tailwindcss.webp";
+import axios from "../assets/axios.webp";
+import mysql from "../assets/mysql.webp";
+import git from "../assets/git.webp";
+import php from "../assets/php.webp";
+import python from "../assets/python.webp";
+import java from "../assets/java.webp";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -32,9 +32,7 @@ const Skills = () => {
           data-aos-duration="2000"
         >
           <div className="flex flex-row p-6">
-            <div className="h-12 w-12">
-              <img src={html} className="rounded-md" />
-            </div>
+            <img src={html} className="rounded-md h-12 w-12" alt="HTML" />
             <div className="flex flex-col ml-4">
               <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                 HTML5
@@ -51,9 +49,7 @@ const Skills = () => {
           data-aos-duration="2000"
         >
           <div className="flex flex-row p-6">
-            <div className="h-12 w-12">
-              <img src={css} className="rounded-md" />
-            </div>
+            <img src={css} className="rounded-md h-12 w-12" alt="CSS" />
             <div className="flex flex-col ml-4">
               <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                 CSS3
@@ -70,9 +66,7 @@ const Skills = () => {
           data-aos-duration="2000"
         >
           <div className="flex flex-row p-6">
-            <div className="h-12 w-12">
-              <img src={js} className="rounded-md" />
-            </div>
+            <img src={js} className="rounded-md h-12 w-12" alt="Javascript" />
             <div className="flex flex-col ml-4">
               <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                 Javascript(ES6)
@@ -89,9 +83,7 @@ const Skills = () => {
           data-aos-duration="2000"
         >
           <div className="flex flex-row p-6">
-            <div className="h-12 w-12">
-              <img src={react} className="rounded-md" />
-            </div>
+            <img src={react} className="rounded-md h-12 w-12" alt="ReactJs" />
             <div className="flex flex-col ml-4">
               <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                 ReactJs
@@ -108,9 +100,11 @@ const Skills = () => {
           data-aos-duration="2000"
         >
           <div className="flex flex-row p-6">
-            <div className="h-12 w-12">
-              <img src={tailwind} className="rounded-md" />
-            </div>
+            <img
+              src={tailwind}
+              className="rounded-md h-12 w-12"
+              alt="TailwindCSS"
+            />
             <div className="flex flex-col ml-4">
               <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                 Tailwindcss
@@ -127,9 +121,7 @@ const Skills = () => {
           data-aos-duration="2000"
         >
           <div className="flex flex-row p-6">
-            <div className="h-12 w-12">
-              <img src={axios} className="rounded-md" />
-            </div>
+            <img src={axios} className="rounded-md h-fit w-12" alt="Axios" />
             <div className="flex flex-col ml-4">
               <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                 Axios
@@ -146,9 +138,7 @@ const Skills = () => {
           data-aos-duration="2000"
         >
           <div className="flex flex-row p-6">
-            <div className="h-12 w-12">
-              <img src={mysql} className="rounded-md" />
-            </div>
+            <img src={mysql} className="rounded-md h-12 w-12" alt="MySQL" />
             <div className="flex flex-col ml-4">
               <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                 MySQL
@@ -165,9 +155,7 @@ const Skills = () => {
           data-aos-duration="2000"
         >
           <div className="flex flex-row p-6">
-            <div className="h-12 w-12">
-              <img src={git} className="rounded-md" />
-            </div>
+            <img src={git} className="rounded-md h-12 w-12" alt="Git" />
             <div className="flex flex-col ml-4">
               <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                 Git
@@ -184,9 +172,7 @@ const Skills = () => {
           data-aos-duration="2000"
         >
           <div className="flex flex-row p-6">
-            <div className="h-12 w-12">
-              <img src={php} className="rounded-md" />
-            </div>
+            <img src={php} className="rounded-md h-12 w-12" alt="PHP" />
             <div className="flex flex-col ml-4">
               <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                 PHP
@@ -203,9 +189,7 @@ const Skills = () => {
           data-aos-duration="2000"
         >
           <div className="flex flex-row p-6">
-            <div className="h-12 w-12">
-              <img src={python} className="rounded-md" />
-            </div>
+            <img src={python} className="rounded-md h-12 w-12" alt="Python" />
             <div className="flex flex-col ml-4">
               <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                 Phyton
@@ -222,9 +206,7 @@ const Skills = () => {
           data-aos-duration="2000"
         >
           <div className="flex flex-row p-6">
-            <div className="h-12 w-12">
-              <img src={java} className="rounded-md" />
-            </div>
+            <img src={java} className="rounded-md h-12 w-12" alt="Java" />
             <div className="flex flex-col ml-4">
               <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
                 Java

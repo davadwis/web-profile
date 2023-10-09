@@ -22,7 +22,7 @@ const Footer = () => {
             <ul className="flex flex-col p-4 md:p-0 rounded-lg md:flex-col md:space-x-8 md:mt-0 text-gray-900 text-center">
               <li>
                 <p className="font-semibold text-primary text-3xl md:block hidden rounded md:hover:bg-transparentmd:p-0 ">
-                  Dava Dwi
+                  DavaDwi
                 </p>
               </li>
               <li>

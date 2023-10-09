@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import profilePicture from "../assets/Picsart_23-09-06_09-53-54-196.png";
+import profilePicture from "../assets/Profile_dava.webp";
 
 const About = () => {
   useEffect(() => {
@@ -48,7 +48,11 @@ const About = () => {
         <div className="flex items-center pt-10 md:w-1/2 md:pt-5 md:pl-10">
           <div className="relative w-full p-3 rounded  md:p-8">
             <div className="rounded-lg bg-white text-black w-full">
-              <img src={profilePicture} className="rounded-full" />
+              <img
+                src={profilePicture}
+                className="rounded-full w-[500px] h-[500px]"
+                alt="Profile Pict Dava"
+              />
             </div>
           </div>
         </div>

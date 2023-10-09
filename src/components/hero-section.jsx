@@ -1,4 +1,4 @@
-import vektor from "../assets/vektor_web_profile_heroSerction.png";
+import vektor from "../assets/vektor_web_profile_heroSerction.webp";
 import { TypeAnimation } from "react-type-animation";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -19,7 +19,7 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <img src={vektor} />
+              <img src={vektor} alt="vektor" className="w-[500px] h-[500px]" />
             </div>
           </div>
         </div>

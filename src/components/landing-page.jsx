@@ -9,15 +9,13 @@ import Contact from "./contact";
 const Home = () => {
   return (
     <>
-      <div className="scrollbar scrollbar-thumb-primary">
-        <Navbar />
-        <Hero />
-        <About />
-        <Skills />
-        <Portofolio />
-        <Contact />
-        <Footer />
-      </div>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Portofolio />
+      <Contact />
+      <Footer />
     </>
   );
 };
