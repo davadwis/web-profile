@@ -2,6 +2,15 @@ import { Dropdown } from "flowbite-react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { NavHashLink } from "react-router-hash-link";
+
+const navigation = [
+  { name: "Profile", href: "/#" },
+  { name: "About", href: "/#about" },
+  { name: "Skills", href: "/#skills" },
+  { name: "Portofolio", href: "/#portofolio" },
+  { name: "Contact", href: "/#contact" },
+];
 
 const Navbar = () => {
   useEffect(() => {
@@ -46,21 +55,11 @@ const Navbar = () => {
                 }
               >
                 <Dropdown.Header>
-                  <Dropdown.Item>
-                    <a href="#">Profile</a>
-                  </Dropdown.Item>
-                  <Dropdown.Item>
-                    <a href="#about">About</a>
-                  </Dropdown.Item>
-                  <Dropdown.Item>
-                    <a href="#skills">Skills</a>
-                  </Dropdown.Item>
-                  <Dropdown.Item>
-                    <a href="#portofolio">Portofolio</a>
-                  </Dropdown.Item>
-                  <Dropdown.Item>
-                    <a href="#contact">Contact</a>
-                  </Dropdown.Item>
+                  {navigation.map((item) => (
+                    <a key={item.name} href={item.href}>
+                      <Dropdown.Item>{item.name}</Dropdown.Item>
+                    </a>
+                  ))}
                 </Dropdown.Header>
               </Dropdown>
             </button>
@@ -69,48 +68,17 @@ const Navbar = () => {
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
-            <ul className="flex flex-col p-4 md:p-0 border text-2xl rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 text-gray-900">
-              <li>
-                <a
-                  href="#"
+            <div className="flex flex-col p-4 md:p-0 border font-light text-2xl rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 text-gray-900">
+              {navigation.map((item) => (
+                <NavHashLink
+                  key={item.name}
+                  to={item.href}
                   className="font-light block rounded md:hover:bg-transparent md:hover:text-primary md:p-0 hover:text-sky-500"
                 >
-                  Profile
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="font-light block rounded md:hover:bg-transparent md:hover:text-primary md:p-0 hover:text-sky-500"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#skills"
-                  className="font-light block rounded md:hover:bg-transparent md:hover:text-primary md:p-0 hover:text-sky-500"
-                >
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#portofolio"
-                  className="font-light block rounded md:hover:bg-transparent md:hover:text-primary md:p-0 hover:text-sky-500"
-                >
-                  Portofolio
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="font-light block rounded md:hover:bg-transparent md:hover:text-primary md:p-0 hover:text-sky-500"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
+                  {item.name}
+                </NavHashLink>
+              ))}
+            </div>
           </div>
         </div>
       </nav>

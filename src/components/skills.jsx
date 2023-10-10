@@ -13,6 +13,30 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+const listSkill = [
+  { name: "HTML5", img: html, alt: "HTML5", level: "Advanced" },
+  { name: "CSS3", img: css, alt: "CSS3", level: "Advanced" },
+  {
+    name: "Javascript(ES6)",
+    img: js,
+    alt: "Javascript",
+    level: "Intermediate",
+  },
+  { name: "ReactJs", img: react, alt: "ReactJs", level: "Intermediate" },
+  {
+    name: "TailwindCSS",
+    img: tailwind,
+    alt: "TailwindCSS",
+    level: "Intermediate",
+  },
+  { name: "Axios", img: axios, alt: "Axios", level: "Intermediate" },
+  { name: "MySQL", img: mysql, alt: "MySQL", level: "Intermediate" },
+  { name: "Git", img: git, alt: "Git", level: "Beginner" },
+  { name: "PHP", img: php, alt: "PHP", level: "Beginner" },
+  { name: "Python", img: python, alt: "Python", level: "Beginner" },
+  { name: "Java", img: java, alt: "Java", level: "Beginner" },
+];
+
 const Skills = () => {
   useEffect(() => {
     Aos.init();
@@ -26,197 +50,31 @@ const Skills = () => {
         </h2>
       </div>
       <div className="grid-cols-1 sm:grid md:grid-cols-4 mb-64 p-4 w-11/12 m-auto content-center">
-        <div
-          className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-          data-aos="flip-up"
-          data-aos-duration="2000"
-        >
-          <div className="flex flex-row p-6">
-            <img src={html} className="rounded-md h-12 w-12" alt="HTML" />
-            <div className="flex flex-col ml-4">
-              <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                HTML5
-              </h5>
-              <p className="text-light text-gray-900 dark:text-neutral-200">
-                Advanced
-              </p>
+        {listSkill.map((item) => (
+          <div key={item.name}>
+            <div
+              className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
+              data-aos="flip-up"
+              data-aos-duration="2000"
+            >
+              <div className="flex flex-row p-6">
+                <img
+                  src={item.img}
+                  className="rounded-md h-12 w-12"
+                  alt={item.alt}
+                />
+                <div className="flex flex-col ml-4">
+                  <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
+                    {item.name}
+                  </h5>
+                  <p className="text-light text-gray-900 dark:text-neutral-200">
+                    {item.level}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div
-          className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-          data-aos="flip-up"
-          data-aos-duration="2000"
-        >
-          <div className="flex flex-row p-6">
-            <img src={css} className="rounded-md h-12 w-12" alt="CSS" />
-            <div className="flex flex-col ml-4">
-              <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                CSS3
-              </h5>
-              <p className="text-light text-gray-900 dark:text-neutral-200">
-                Advanced
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-          data-aos="flip-up"
-          data-aos-duration="2000"
-        >
-          <div className="flex flex-row p-6">
-            <img src={js} className="rounded-md h-12 w-12" alt="Javascript" />
-            <div className="flex flex-col ml-4">
-              <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                Javascript(ES6)
-              </h5>
-              <p className="text-light text-gray-900 dark:text-neutral-200">
-                Intermediate
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-          data-aos="flip-up"
-          data-aos-duration="2000"
-        >
-          <div className="flex flex-row p-6">
-            <img src={react} className="rounded-md h-12 w-12" alt="ReactJs" />
-            <div className="flex flex-col ml-4">
-              <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                ReactJs
-              </h5>
-              <p className="text-light text-gray-900 dark:text-neutral-200">
-                Intermediate
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-          data-aos="flip-up"
-          data-aos-duration="2000"
-        >
-          <div className="flex flex-row p-6">
-            <img
-              src={tailwind}
-              className="rounded-md h-12 w-12"
-              alt="TailwindCSS"
-            />
-            <div className="flex flex-col ml-4">
-              <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                Tailwindcss
-              </h5>
-              <p className="text-light text-gray-900 dark:text-neutral-200">
-                Intermediate
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-          data-aos="flip-up"
-          data-aos-duration="2000"
-        >
-          <div className="flex flex-row p-6">
-            <img src={axios} className="rounded-md h-fit w-12" alt="Axios" />
-            <div className="flex flex-col ml-4">
-              <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                Axios
-              </h5>
-              <p className="text-light text-gray-900 dark:text-neutral-200">
-                Intermediate
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-          data-aos="flip-up"
-          data-aos-duration="2000"
-        >
-          <div className="flex flex-row p-6">
-            <img src={mysql} className="rounded-md h-12 w-12" alt="MySQL" />
-            <div className="flex flex-col ml-4">
-              <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                MySQL
-              </h5>
-              <p className="text-light text-gray-900 dark:text-neutral-200">
-                Intermediate
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-          data-aos="flip-up"
-          data-aos-duration="2000"
-        >
-          <div className="flex flex-row p-6">
-            <img src={git} className="rounded-md h-12 w-12" alt="Git" />
-            <div className="flex flex-col ml-4">
-              <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                Git
-              </h5>
-              <p className="text-light text-gray-900 dark:text-neutral-200">
-                Beginner
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-          data-aos="flip-up"
-          data-aos-duration="2000"
-        >
-          <div className="flex flex-row p-6">
-            <img src={php} className="rounded-md h-12 w-12" alt="PHP" />
-            <div className="flex flex-col ml-4">
-              <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                PHP
-              </h5>
-              <p className="text-light text-gray-900 dark:text-neutral-200">
-                Beginner
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-          data-aos="flip-up"
-          data-aos-duration="2000"
-        >
-          <div className="flex flex-row p-6">
-            <img src={python} className="rounded-md h-12 w-12" alt="Python" />
-            <div className="flex flex-col ml-4">
-              <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                Phyton
-              </h5>
-              <p className="text-light text-gray-900 dark:text-neutral-200">
-                Beginner
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-          data-aos="flip-up"
-          data-aos-duration="2000"
-        >
-          <div className="flex flex-row p-6">
-            <img src={java} className="rounded-md h-12 w-12" alt="Java" />
-            <div className="flex flex-col ml-4">
-              <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                Java
-              </h5>
-              <p className="text-light text-gray-900 dark:text-neutral-200">
-                Beginner
-              </p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </>
   );

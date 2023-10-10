@@ -7,6 +7,44 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+const listContact = [
+  {
+    name: "Instagram",
+    account: "@davadwi",
+    img: ig,
+    alt: "Instagram",
+    href: "https://www.instagram.com/davadwi/",
+  },
+  {
+    name: "LinkedIn",
+    account: "muhamaddava",
+    img: linkedin,
+    alt: "LinkedIn",
+    href: "https://www.linkedin.com/in/muhamaddava/",
+  },
+  {
+    name: "GitHub",
+    account: "davadwis",
+    img: github,
+    alt: "Github",
+    href: "https://github.com/davadwis/",
+  },
+  {
+    name: "E-Mail",
+    account: "davadwi123@gmail.com",
+    img: email,
+    alt: "E-Mail",
+    href: "https://mail.google.com/",
+  },
+  {
+    name: "Whatsapp",
+    account: "+62 87741593195",
+    img: wa,
+    alt: "Whatsapp",
+    href: "https://wa.link/woj6n3/",
+  },
+];
+
 const Contact = () => {
   useEffect(() => {
     Aos.init();
@@ -20,105 +58,33 @@ const Contact = () => {
         </h2>
       </div>
       <div className="grid-cols-1 sm:grid md:grid-cols-3 mb-64 p-4 w-11/12 m-auto content-center">
-        <a href="https://www.instagram.com/davadwi/">
-          <div
-            className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-            data-aos="flip-up"
-            data-aos-duration="2000"
-          >
-            <div className="flex flex-row p-6">
-              <img src={ig} className="rounded-md h-12 w-12" alt="Instagram" />
-              <div className="flex flex-col ml-4">
-                <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                  Instagram
-                </h5>
-                <p className="text-light text-gray-900 dark:text-neutral-200">
-                  @davadwi
-                </p>
+        {listContact.map((item) => (
+          <div key={item.name}>
+            <a href={item.href}>
+              <div
+                className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
+                data-aos="flip-up"
+                data-aos-duration="2000"
+              >
+                <div className="flex flex-row p-6">
+                  <img
+                    src={item.img}
+                    className="rounded-md h-12 w-12"
+                    alt={item.alt}
+                  />
+                  <div className="flex flex-col ml-4">
+                    <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
+                      {item.name}
+                    </h5>
+                    <p className="text-light text-gray-900 dark:text-neutral-200">
+                      {item.account}
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
-        </a>
-        <a href="https://www.linkedin.com/in/muhamaddava/">
-          <div
-            className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-            data-aos="flip-up"
-            data-aos-duration="2000"
-          >
-            <div className="flex flex-row p-6">
-              <img
-                src={linkedin}
-                className="rounded-md h-12 w-12"
-                alt="LinkedIn"
-              />
-              <div className="flex flex-col ml-4">
-                <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                  LinkedIn
-                </h5>
-                <p className="text-light text-gray-900 dark:text-neutral-200">
-                  muhamaddava
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://github.com/davadwis">
-          <div
-            className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-            data-aos="flip-up"
-            data-aos-duration="2000"
-          >
-            <div className="flex flex-row p-6">
-              <img src={github} className="rounded-md h-12 w-12" alt="Github" />
-              <div className="flex flex-col ml-4">
-                <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                  Github
-                </h5>
-                <p className="text-light text-gray-900 dark:text-neutral-200">
-                  davadwis
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://mail.google.com/">
-          <div
-            className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-            data-aos="flip-up"
-            data-aos-duration="2000"
-          >
-            <div className="flex flex-row p-6">
-              <img src={email} className="rounded-md h-12 w-12" alt="E-Mail" />
-              <div className="flex flex-col ml-4">
-                <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                  E-Mail
-                </h5>
-                <p className="text-light text-gray-900 dark:text-neutral-200">
-                  davadwi123@gmail.com
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a href="https://wa.link/woj6n3">
-          <div
-            className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-            data-aos="flip-up"
-            data-aos-duration="2000"
-          >
-            <div className="flex flex-row p-6">
-              <img src={wa} className="rounded-md h-12 w-12" alt="Whatsapp" />
-              <div className="flex flex-col ml-4">
-                <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                  Whatsapp
-                </h5>
-                <p className="text-light text-gray-900 dark:text-neutral-200">
-                  +62 87741593195
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
+        ))}
       </div>
     </>
   );
