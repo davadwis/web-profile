@@ -19,7 +19,7 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <img src={vektor} alt="vektor" className="w-[500px] h-[500px]" />
+              <img src={vektor} alt="vektor" className="w-[500px] h-fit" />
             </div>
           </div>
         </div>
@@ -29,12 +29,12 @@ const Hero = () => {
           data-aos-duration="1500"
         >
           <div className="text-left">
-            <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
+            <h1 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
               Hi, Im <span></span>
               <span className="font-bold text-primary">
                 Muhamad Dava Dwi Saputra
               </span>
-            </h2>
+            </h1>
             <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
               Im a <span></span>
               <TypeAnimation

@@ -17,7 +17,7 @@ const listSkill = [
   { name: "HTML5", img: html, alt: "HTML5", level: "Advanced" },
   { name: "CSS3", img: css, alt: "CSS3", level: "Advanced" },
   {
-    name: "Javascript(ES6)",
+    name: "Javascript",
     img: js,
     alt: "Javascript",
     level: "Intermediate",
@@ -44,37 +44,39 @@ const Skills = () => {
 
   return (
     <>
-      <div className="text-center pt-36" id="skills">
-        <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
-          <span className="font-semibold text-primary">Skills</span>
-        </h2>
-      </div>
-      <div className="grid-cols-1 sm:grid md:grid-cols-4 mb-64 p-4 w-11/12 m-auto content-center">
-        {listSkill.map((item) => (
-          <div key={item.name}>
-            <div
-              className="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900 sm:shrink-0 sm:grow sm:basis-0"
-              data-aos="flip-up"
-              data-aos-duration="2000"
-            >
-              <div className="flex flex-row p-6">
-                <img
-                  src={item.img}
-                  className="rounded-md h-12 w-12"
-                  alt={item.alt}
-                />
-                <div className="flex flex-col ml-4">
-                  <h5 className="mb-1text-xl font-semibold leading-tight text-gray-900">
-                    {item.name}
-                  </h5>
-                  <p className="text-light text-gray-900 dark:text-neutral-200">
-                    {item.level}
-                  </p>
+      <div id="skills" className=" pt-28 md:pt-36">
+        <div className="text-center">
+          <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
+            <span className="font-semibold text-primary">Skills</span>
+          </h2>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 p-4 md:w-11/12 m-auto content-center md:pb-8">
+          {listSkill.map((item) => (
+            <div key={item.name}>
+              <div
+                className="mx-3 mt-6 md:flex md:flex-col flex-row self-start rounded-lg bg-white shadow-primary/50 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border-gray-900"
+                data-aos="flip-up"
+                data-aos-duration="2000"
+              >
+                <div className="md:flex flex-row p-4">
+                  <img
+                    src={item.img}
+                    className="rounded-md h-8 w-8 md:h-12 md:w-12 m-auto md:m-0 md:mb-0 mb-4"
+                    alt={item.alt}
+                  />
+                  <div className="flex flex-col m-0 md:ml-4 text-center md:text-start">
+                    <h3 className="text-base md:text-lg font-semibold leading-tight text-gray-900">
+                      {item.name}
+                    </h3>
+                    <p className="text-xs md:text-sm text-light text-gray-900 dark:text-neutral-200">
+                      {item.level}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );
