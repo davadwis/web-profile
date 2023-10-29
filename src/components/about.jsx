@@ -35,7 +35,7 @@ const About = () => {
                 <div className="rounded-md shadow">
                   <button>
                     <a
-                      href="https://drive.google.com/file/d/1HZ6eBOlXkc6Lx2qaEs6NWmZuHWPf9vK1/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1UtMKN1eoM0z_cY4gZ5v3co1Q6fTEJ9K5/view?usp=sharing"
                       className="flex items-center justify-center w-full px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-primary border border-transparent rounded-md hover:bg-primary/70 focus:outline-none focus:shadow-outline-blue md:py-4 md:text-lg md:px-10"
                     >
                       Download My CV
