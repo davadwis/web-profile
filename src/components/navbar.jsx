@@ -24,7 +24,7 @@ const Navbar = () => {
         data-aos="fade-down"
         data-aos-duration="1500"
       >
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4 h-[96px]">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4 h-[64px]">
           <div className="flex">
             <div className="text-sm text-gray-900 rounded-lg md:hidden pr-36">
               <a href="/">

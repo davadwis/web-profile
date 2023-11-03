@@ -11,6 +11,8 @@ import python from "../assets/python.webp";
 import java from "../assets/java.webp";
 import vue from "../assets/vue.webp";
 import nextjs from "../assets/nextjs.webp";
+import typescript from "../assets/typescript.webp";
+import go from "../assets/go.webp";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -35,6 +37,8 @@ const listSkill = [
   },
   { name: "Axios", img: axios, alt: "Axios", level: "Intermediate" },
   { name: "MySQL", img: mysql, alt: "MySQL", level: "Intermediate" },
+  { name: "Typescript", img: typescript, alt: "Typescript", level: "Beginner" },
+  { name: "Go", img: go, alt: "Go", level: "Beginner" },
   { name: "Git", img: git, alt: "Git", level: "Beginner" },
   { name: "PHP", img: php, alt: "PHP", level: "Beginner" },
   { name: "Python", img: python, alt: "Python", level: "Beginner" },
@@ -48,7 +52,7 @@ const Skills = () => {
 
   return (
     <>
-      <div id="skills" className=" pt-28 md:pt-36">
+      <div id="skills" className=" pt-28 md:pt-30">
         <div className="text-center">
           <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
             <span className="font-semibold text-primary">Skills</span>

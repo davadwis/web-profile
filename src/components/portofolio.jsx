@@ -36,7 +36,7 @@ const Portofolio = () => {
 
   return (
     <>
-      <div id="portofolio" className="md:pt-60 pt-28">
+      <div id="portofolio" className="md:pt-52 pt-28">
         <div className="text-center">
           <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
             <span className="font-semibold text-primary">Portofolio</span>
